@@ -94,9 +94,9 @@ The application is developed using **FastAPI**, a modern web framework for build
     - The API fetches and processes the image, returning predictions.
 
 ### Example Response:
-![pic5](https://github.com/user-attachments/assets/9fa6c964-85b2-4eeb-b73b-c8d14d7047df)
-![pic4](https://github.com/user-attachments/assets/4dab04c8-1a1e-487c-9ba6-4a14b0605155)
-![pic2](https://github.com/user-attachments/assets/539fe093-3553-4ea9-b248-380e73723f50)
 ![pic1](https://github.com/user-attachments/assets/41d15ff8-419b-4a0e-8699-7e0d0457065f)
+![pic2](https://github.com/user-attachments/assets/539fe093-3553-4ea9-b248-380e73723f50)
 ![pic3](https://github.com/user-attachments/assets/85a5d8ac-c97c-4d10-8c81-e7a5a2130b1b)
+![pic4](https://github.com/user-attachments/assets/4dab04c8-1a1e-487c-9ba6-4a14b0605155)
+![pic5](https://github.com/user-attachments/assets/9fa6c964-85b2-4eeb-b73b-c8d14d7047df)
 
