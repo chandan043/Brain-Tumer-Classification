@@ -94,8 +94,7 @@ The application is developed using **FastAPI**, a modern web framework for build
     - The API fetches and processes the image, returning predictions.
 
 ### Example Response:
-```json
-{
-  "prediction": "Glioblastoma",
-  "confidence": 97.5
-}
+- **TestCase 1:**
+- 
+- **TestCase 2:**
+- **TestCase 3:**
