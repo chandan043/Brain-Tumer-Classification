@@ -1,0 +1,48 @@
+/* Background color */
+body {
+    background-color: #f4f8fb;
+}
+
+/* Centering the card */
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* Card shadow and padding */
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+.btn {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Image preview */
+.img-thumbnail {
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}

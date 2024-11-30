@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="card shadow-lg p-4">
+            <h1 class="text-center text-primary mb-4">Image Classification App</h1>
+            <p class="text-center text-muted">Upload an image or provide an image URL, and our AI will classify it!</p>
+
+            <!-- Upload Form -->
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="file" class="form-label">Upload an Image:</label>
+                    <input type="file" name="file" class="form-control" id="file" accept="image/*">
+                </div>
+                <div class="text-center">
+                    <img id="preview-image" src="#" alt="Image Preview" class="img-thumbnail mb-3" style="display: none; max-width: 300px;">
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mb-3">Classify Uploaded Image</button>
+            </form>
+
+            <!-- URL Form -->
+            <form action="/predict-url" method="post">
+                <div class="mb-3">
+                    <label for="url" class="form-label">Enter Image URL:</label>
+                    <input type="url" name="url" class="form-control" id="url" placeholder="https://example.com/image.jpg" required>
+                </div>
+                <button type="submit" class="btn btn-secondary w-100">Classify Image by URL</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="text-center py-3 mt-5 bg-light">
+        <p class="mb-0 text-muted">&copy; 2024 AI Image Classifier | &copy; Team 9</p>
+    </footer>
+
+    <script>
+        // Preview uploaded image
+        document.getElementById('file').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const preview = document.getElementById('preview-image');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
